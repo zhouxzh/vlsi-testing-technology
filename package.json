@@ -1,0 +1,23 @@
+{
+  "name": "vlsi-testing-technology",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "超大规模集成电路测试基础课程主页与教学资料",
+  "scripts": {
+    "docs:slides": "node scripts/build_presentation.mjs",
+    "docs:build": "node scripts/clean_build.mjs && pnpm run docs:slides && vuepress-vite build src",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:clean": "vuepress-vite dev src --clean-cache"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.0",
+    "@vuepress/bundler-vite": "2.0.0-rc.24",
+    "markdown-it-attrs": "^4.3.1",
+    "sass-embedded": "^1.93.2",
+    "vue": "^3.5.0",
+    "vuepress": "2.0.0-rc.24",
+    "vuepress-theme-hope": "2.0.0-rc.94"
+  },
+  "packageManager": "pnpm@10.28.0"
+}
