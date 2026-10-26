@@ -22,8 +22,8 @@ toc: false
       <span>8 套重构课件</span>
     </div>
     <div class="course-actions">
-      <a class="primary" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/01-testing-fault-models-and-economics.html">播放第 1 章课件</a>
-      <a class="secondary" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/">全部课件</a>
+      <a class="primary" href="#course-chapters">查看八章内容</a>
+      <a class="secondary" href="./plan/">查看教学计划</a>
     </div>
   </div>
   <span class="course-hero__source">图像：[2]，授课教师未公开流片资料</span>
@@ -52,30 +52,30 @@ toc: false
   <p class="course-section__intro">课程沿着四个理论问题推进：怎样把物理缺陷表示为故障；怎样生成和评价测试；怎样通过 DFT 获得状态控制与观察能力；怎样把测试结果转化为诊断、修复和可靠性判断。</p>
 
   <div class="course-path">
-    <article>
+<article>
       <b>01 · MODEL</b>
       <h3>缺陷与故障</h3>
       <p>固定型、晶体管、开路与短路、桥接、延迟、串扰、图形敏感和模拟故障。</p>
-    </article>
-    <article>
+</article>
+<article>
       <b>02 · GENERATE</b>
       <h3>仿真与 ATPG</h3>
       <p>多值仿真、故障模拟、布尔差分、路径敏化、D 算法、PODEM、FAN 与时序扩展。</p>
-    </article>
-    <article>
+</article>
+<article>
       <b>03 · DESIGN</b>
       <h3>DFT 与 BIST</h3>
       <p>可测性度量、扫描架构、测试压缩、响应分析、at-speed BIST 和核级访问。</p>
-    </article>
-    <article>
+</article>
+<article>
       <b>04 · DIAGNOSE</b>
       <h3>诊断与可靠性</h3>
       <p>故障字典、逻辑诊断、扫描链诊断、存储器修复、软错误与系统级测试边界。</p>
-    </article>
+</article>
   </div>
 </section>
 
-<section class="course-chapter">
+<section id="chapter-01" class="course-chapter">
   <div class="course-chapter__inner">
     <div>
       <p class="course-eyebrow">Chapter 01 · Personal Tapeout Cases</p>
@@ -88,8 +88,7 @@ toc: false
         <li>用“已验证、材料声称、待核验”记录每一个案例结论</li>
       </ul>
       <div class="course-actions">
-        <a class="primary" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/01-testing-fault-models-and-economics.html">播放第 1 章课件</a>
-        <a class="secondary" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/">全部课件</a>
+        <a class="primary" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/01-testing-fault-models-and-economics.html">播放第 1 章</a>
       </div>
     </div>
     <div class="course-case-pair">
@@ -105,52 +104,179 @@ toc: false
   </div>
 </section>
 
-<section class="course-roadmap">
+<section id="course-chapters" class="course-roadmap">
   <div class="course-section course-roadmap__inner">
     <p class="course-eyebrow">Eight Lectures</p>
     <h2>八章纯理论教学路线</h2>
-    <div class="chapter-list">
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/01-testing-fault-models-and-economics.html">
-        <b>01</b>
-        <span><strong>测试导论、缺陷与故障建模</strong><small>测试生命周期、质量与良率、故障模型、抽象层次、覆盖率和测试经济学</small></span>
-        <i>播放课件</i>
-      </a>
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/02-design-for-testability-and-scan.html">
-        <b>02</b>
-        <span><strong>可测性设计与扫描架构</strong><small>SCOAP、测试点、扫描单元、全/部分扫描、扫描规则、特殊扫描和 RTL DFT</small></span>
-        <i>播放课件</i>
-      </a>
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/03-simulation-and-atpg.html">
-        <b>03</b>
-        <span><strong>逻辑与故障仿真、测试生成</strong><small>多值逻辑、事件仿真、故障仿真、D/PODEM/FAN、时序与非固定型 ATPG</small></span>
-        <i>播放课件</i>
-      </a>
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/04-logic-bist-and-test-compression.html">
-        <b>04</b>
-        <span><strong>逻辑内建自测试与测试压缩</strong><small>TPG、LFSR、签名与 MISR、BILBO、at-speed BIST、刺激与响应压缩</small></span>
-        <i>播放课件</i>
-      </a>
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/05-logic-diagnosis.html">
-        <b>05</b>
-        <span><strong>逻辑诊断</strong><small>故障字典、因果分析、诊断 ATPG、扫描链诊断和 BIST 诊断</small></span>
-        <i>播放课件</i>
-      </a>
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/06-memory-test-diagnosis-and-repair.html">
-        <b>06</b>
-        <span><strong>存储器测试、诊断与内建自修复</strong><small>RAM 故障、March/GALPAT、RAMSES、MBIST、冗余分析、BIRA/BISR</small></span>
-        <i>播放课件</i>
-      </a>
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/07-boundary-scan-core-and-mixed-signal-testing.html">
-        <b>07</b>
-        <span><strong>边界扫描、核级与模拟/混合信号测试</strong><small>IEEE 1149.1/6、1500、CTL、ADC/DAC、IEEE 1057 与 1149.4</small></span>
-        <i>播放课件</i>
-      </a>
-      <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/08-nanometer-test-trends-and-high-speed-io.html">
-        <b>08</b>
-        <span><strong>纳米测试议题与现代补充</strong><small>延迟、信号/电源完整性、软错误、FPGA/MEMS、高速 I/O、RF、3D 与 IJTAG</small></span>
-        <i>播放课件</i>
-      </a>
-    </div>
+    <p class="course-section__intro">每章对应一次 3 × 45 分钟课堂。以下列出章节简介、三个理论节次和直接播放入口。</p>
+
+<article id="chapter-02" class="chapter-entry">
+      <div class="chapter-entry__main">
+        <p class="chapter-entry__number">Chapter 02</p>
+        <div>
+          <h3>可测性设计与扫描架构</h3>
+          <p>从 SCOAP、概率和 RTL 可测性出发，说明测试点与扫描结构如何把内部状态变成可控制、可观察的访问路径。</p>
+          <ul>
+            <li>组合与时序可测性度量</li>
+            <li>MUX-D、Clocked-scan 与 LSSD</li>
+            <li>全扫描、部分扫描、扫描规则与成本</li>
+          </ul>
+          <a class="chapter-entry__action" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/02-design-for-testability-and-scan.html">播放第 2 章</a>
+        </div>
+      </div>
+      <div class="chapter-entry__outline">
+        <h4>三个 45 分钟</h4>
+        <ol>
+          <li><span>可测性度量与测试点</span></li>
+          <li><span>扫描单元与扫描架构</span></li>
+          <li><span>扫描规则、综合、验证与成本</span></li>
+        </ol>
+      </div>
+</article>
+
+<article id="chapter-03" class="chapter-entry">
+      <div class="chapter-entry__main">
+        <p class="chapter-entry__number">Chapter 03</p>
+        <div>
+          <h3>逻辑与故障仿真、测试生成</h3>
+          <p>建立从逻辑求值、故障注入到测试向量生成的计算链，比较多类仿真和 ATPG 算法在适用条件与计算代价上的差别。</p>
+          <ul>
+            <li>多值逻辑、事件驱动与延迟模型</li>
+            <li>并行、演绎、并发与差分故障仿真</li>
+            <li>D 算法、PODEM、FAN 与时序/延迟 ATPG</li>
+          </ul>
+          <a class="chapter-entry__action" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/03-simulation-and-atpg.html">播放第 3 章</a>
+        </div>
+      </div>
+      <div class="chapter-entry__outline">
+        <h4>三个 45 分钟</h4>
+        <ol>
+          <li><span>逻辑模型与无故障仿真</span></li>
+          <li><span>故障仿真与覆盖率评价</span></li>
+          <li><span>确定性 ATPG 与测试集压缩</span></li>
+        </ol>
+      </div>
+</article>
+
+<article id="chapter-04" class="chapter-entry">
+      <div class="chapter-entry__main">
+        <p class="chapter-entry__number">Chapter 04</p>
+        <div>
+          <h3>逻辑内建自测试与测试压缩</h3>
+          <p>讨论如何把测试图形生成、响应分析和判定移入芯片，并通过测试压缩降低外部数据量与测试时间。</p>
+          <ul>
+            <li>LFSR、加权/伪穷举图形与测试点</li>
+            <li>MISR、签名混叠与 BILBO/STUMPS</li>
+            <li>单/双捕获、X 处理与刺激/响应压缩</li>
+          </ul>
+          <a class="chapter-entry__action" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/04-logic-bist-and-test-compression.html">播放第 4 章</a>
+        </div>
+      </div>
+      <div class="chapter-entry__outline">
+        <h4>三个 45 分钟</h4>
+        <ol>
+          <li><span>BIST 生成器与响应分析器</span></li>
+          <li><span>BIST 架构、捕获时序与覆盖增强</span></li>
+          <li><span>测试刺激与响应压缩</span></li>
+        </ol>
+      </div>
+</article>
+
+<article id="chapter-05" class="chapter-entry">
+      <div class="chapter-entry__main">
+        <p class="chapter-entry__number">Chapter 05</p>
+        <div>
+          <h3>逻辑诊断</h3>
+          <p>在测试只给出“通过/失败”之后，进一步利用响应差异、结构信息和测试条件缩小候选故障位置与机理。</p>
+          <ul>
+            <li>故障字典、因果分析和效应-原因分析</li>
+            <li>结构裁剪、反向追踪与诊断 ATPG</li>
+            <li>扫描链诊断与 BIST 区间/掩码诊断</li>
+          </ul>
+          <a class="chapter-entry__action" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/05-logic-diagnosis.html">播放第 5 章</a>
+        </div>
+      </div>
+      <div class="chapter-entry__outline">
+        <h4>三个 45 分钟</h4>
+        <ol>
+          <li><span>诊断指标与故障字典</span></li>
+          <li><span>因果反演、结构分析和扫描链诊断</span></li>
+          <li><span>BIST 诊断与芯片级定位</span></li>
+        </ol>
+      </div>
+</article>
+
+<article id="chapter-06" class="chapter-entry">
+      <div class="chapter-entry__main">
+        <p class="chapter-entry__number">Chapter 06</p>
+        <div>
+          <h3>存储器测试、诊断与内建自修复</h3>
+          <p>针对规则存储阵列建立地址、状态、邻接和访问顺序相关的故障模型，并连接 MBIST、冗余分析与 BISR。</p>
+          <ul>
+            <li>RAM 固定型、跳变、耦合和图形敏感故障</li>
+            <li>March、Checkerboard、GALPAT 与 RAMSES</li>
+            <li>MBIST、诊断支持、冗余分析与修复率</li>
+          </ul>
+          <a class="chapter-entry__action" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/06-memory-test-diagnosis-and-repair.html">播放第 6 章</a>
+        </div>
+      </div>
+      <div class="chapter-entry__outline">
+        <h4>三个 45 分钟</h4>
+        <ol>
+          <li><span>存储器故障模型与 March 算法</span></li>
+          <li><span>故障仿真、MBIST 与测试架构</span></li>
+          <li><span>诊断、冗余分析与内建自修复</span></li>
+        </ol>
+      </div>
+</article>
+
+<article id="chapter-07" class="chapter-entry">
+      <div class="chapter-entry__main">
+        <p class="chapter-entry__number">Chapter 07</p>
+        <div>
+          <h3>边界扫描、核级与模拟/混合信号测试</h3>
+          <p>把测试访问从芯片内部扩展到板级互连、可复用核和模拟边界，并建立数字协议与连续信号指标之间的联系。</p>
+          <ul>
+            <li>IEEE 1149.1、1149.6、BSDL 与板级互连</li>
+            <li>IEEE 1500、TAM、CTL 与核级访问</li>
+            <li>模拟故障、ADC/DAC、IEEE 1057 与 1149.4</li>
+          </ul>
+          <a class="chapter-entry__action" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/07-boundary-scan-core-and-mixed-signal-testing.html">播放第 7 章</a>
+        </div>
+      </div>
+      <div class="chapter-entry__outline">
+        <h4>三个 45 分钟</h4>
+        <ol>
+          <li><span>边界扫描与板级互连测试</span></li>
+          <li><span>测试壳、核级访问与控制</span></li>
+          <li><span>模拟与混合信号测试</span></li>
+        </ol>
+      </div>
+</article>
+
+<article id="chapter-08" class="chapter-entry">
+      <div class="chapter-entry__main">
+        <p class="chapter-entry__number">Chapter 08</p>
+        <div>
+          <h3>纳米测试议题与现代补充</h3>
+          <p>把固定型测试扩展到延迟、完整性、工艺变异、软错误和高速接口，同时区分教材历史结论与现代标准状态。</p>
+          <ul>
+            <li>缺陷驱动测试、N 次检测与统计延迟</li>
+            <li>FPGA、MEMS、高速 I/O 与 RF 测试</li>
+            <li>IEEE 1838、1687、低功耗/在役测试与 AI 辅助测试</li>
+          </ul>
+          <a class="chapter-entry__action" href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/08-nanometer-test-trends-and-high-speed-io.html">播放第 8 章</a>
+        </div>
+      </div>
+      <div class="chapter-entry__outline">
+        <h4>三个 45 分钟</h4>
+        <ol>
+          <li><span>纳米风险、延迟与可靠性</span></li>
+          <li><span>FPGA、MEMS、高速 I/O 与 RF</span></li>
+          <li><span>现代标准与全课程综合</span></li>
+        </ol>
+      </div>
+</article>
   </div>
 </section>
 
@@ -189,10 +315,10 @@ toc: false
       <span>八章、24 个纯理论节次、公式例题和章节证据</span>
       <i>查看计划</i>
     </a>
-    <a href="https://zhouxzh.github.io/vlsi-testing-technology/presentation/">
-      <strong>播放课件</strong>
-      <span>8 套共 262 页纯理论 Marp 课件，含独立参考文献页</span>
-      <i>打开目录</i>
+    <a href="#course-chapters">
+      <strong>八章入口</strong>
+      <span>章节目录、三节内容概览和逐章直接播放入口</span>
+      <i>选择章节</i>
     </a>
     <a href="./references/">
       <strong>参考资料</strong>

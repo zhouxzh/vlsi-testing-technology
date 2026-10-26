@@ -91,7 +91,6 @@ await command("Runtime.enable");
 const pages = [
   ["home", ""],
   ["plan", "plan/"],
-  ["presentations", "presentation/"],
   ["references", "references/"],
 ];
 const viewports = [
@@ -205,6 +204,26 @@ try {
         path.join(screenshots, `${pageName}-${viewportName}.png`),
         Buffer.from(screenshot.data, "base64"),
       );
+      if (pageName === "home") {
+        const metrics = await command("Page.getLayoutMetrics");
+        const size = metrics.cssContentSize;
+        const fullPage = await command("Page.captureScreenshot", {
+          format: "png",
+          fromSurface: true,
+          captureBeyondViewport: true,
+          clip: {
+            x: 0,
+            y: 0,
+            width: size.width,
+            height: Math.min(size.height, 20000),
+            scale: 1,
+          },
+        });
+        fs.writeFileSync(
+          path.join(screenshots, `${pageName}-${viewportName}-full.png`),
+          Buffer.from(fullPage.data, "base64"),
+        );
+      }
     }
   }
   console.log(`Screenshots: ${screenshots}`);

@@ -14,10 +14,9 @@ export default navbar([
     activeMatch: "^/plan/",
   },
   {
-    text: "播放课件",
-    link: "/presentation/",
-    icon: "presentation",
-    activeMatch: "^/presentation/",
+    text: "课程章节",
+    link: "/#course-chapters",
+    icon: "book",
   },
   {
     text: "参考资料",

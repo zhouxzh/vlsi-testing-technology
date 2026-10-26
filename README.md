@@ -19,7 +19,7 @@
 
 - [课程主页](src/README.md)
 - [教学计划](src/plan/README.md)
-- [教学演示](src/presentation/README.md)
+- [八章播放入口](src/README.md#course-chapters)
 - [参考资料与开放资源](src/references/README.md)
 
 ## 八章结构
